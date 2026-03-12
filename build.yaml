@@ -23,7 +23,7 @@ include:
   - board: nrfmicro_13
     shield: corne_dongle
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_STUDIO=y -DCONFIG_BATTERY_REPORTING=y DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: nrfmicro_13_dongle
 
   - board: nice_nano_v2
