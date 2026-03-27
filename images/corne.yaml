@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: ▽, type: trans}
-  - layers
+  - '2'
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
   - {t: D, h: LCTRL}
@@ -38,12 +38,12 @@ layers:
   - /
   - {t: ▽, type: trans}
   - {t: ESC, h: media}
-  - {t: TAB, h: navigation}
-  - ENTER
-  - {t: SPACE, h: symbols}
+  - {t: SPACE, h: navigation}
+  - {t: TAB, h: mouse}
+  - {t: ENTER, h: symbols}
   - {t: BSPC, h: numbers}
   - {t: DEL, h: function}
-  colmak:
+  colemak:
   - {t: ▽, type: trans}
   - Q
   - W
@@ -56,7 +56,7 @@ layers:
   - Y
   - ''''
   - {t: ▽, type: trans}
-  - layers
+  - '2'
   - {t: A, h: LGUI}
   - {t: R, h: LALT}
   - {t: S, h: LCTRL}
@@ -82,10 +82,96 @@ layers:
   - {t: ▽, type: trans}
   - {t: ESC, h: media}
   - {t: SPACE, h: navigation}
-  - {t: TAB, h: qwerty}
+  - {t: TAB, h: mouse}
   - {t: ENTER, h: symbols}
   - {t: BSPC, h: numbers}
   - {t: DEL, h: function}
+  '2':
+  - {t: ▽, type: trans}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: ▽, type: trans}
+  - {t: '2', type: held}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RET
+  - SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '3':
+  - {t: ▽, type: trans}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: ▽, type: trans}
+  - '2'
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RET
+  - SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -99,7 +185,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -108,7 +194,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: qwerty, h: toggle}
-  - {t: '3', h: toggle}
+  - {t: numbers, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -119,7 +205,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: colmak, h: toggle}
+  - {t: colemak, h: toggle}
   - {t: qwerty, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -130,7 +216,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   navigation:
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -172,6 +258,49 @@ layers:
   - ENTER
   - BSPC
   - DEL
+  mouse:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -344,46 +473,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  '3':
-  - {t: ▽, type: trans}
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: ▽, type: trans}
-  - layers
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RET
-  - SPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
