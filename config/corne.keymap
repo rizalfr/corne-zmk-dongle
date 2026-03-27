@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // Layer Definitions
 
@@ -54,7 +55,7 @@
 &trans       &kp Q       &kp W        &kp E        &kp R      &kp T          &kp Y        &kp U        &kp I         &kp O          &kp P  &trans
  &mo 2  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F      &kp G          &kp H  &mt LSHFT J  &mt LCTRL K    &mt LALT L  &mt LGUI SEMI  &trans
 &trans       &kp Z  &mt RALT X        &kp C        &kp V      &kp B          &kp N        &kp M    &kp COMMA  &mt RALT DOT       &kp FSLH  &trans
-                                  &lt 4 ESC    &lt 3 SPACE  &kp TAB    &lt 6 ENTER   &lt 5 BSPC    &lt 7 DEL
+                                  &lt 4 ESC    &lt 3 SPACE  &lt MOUSE TAB    &lt MOUSE ENTER   &lt 5 BSPC    &lt 7 DEL
             >;
         };
 
@@ -69,7 +70,7 @@
 &trans       &kp Q       &kp W        &kp F        &kp P      &kp B          &kp J        &kp L        &kp U         &kp Y     &kp SQT  &trans
  &mo 2  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T      &kp G          &kp M  &mt LSHFT N  &mt LCTRL E    &mt LALT I  &mt LGUI O  &trans
 &trans       &kp Z  &mt RALT X        &kp C        &kp D      &kp V          &kp K        &kp H    &kp COMMA  &mt RALT DOT    &kp FSLH  &trans
-                                  &lt 4 ESC  &lt 3 SPACE  &lt 0 TAB    &lt 6 ENTER   &lt 5 BSPC    &lt 7 DEL
+                                  &lt 4 ESC  &lt 3 SPACE  &lt MOUSE TAB    &lt MOUSE ENTER   &lt 5 BSPC    &lt 7 DEL
             >;
         };
 
@@ -103,9 +104,20 @@
             >;
         };
 
-        // TODO
-        // Add mouse keys when implemented in ZMK
+        mouse {
+            // -----------------------------------------------------------------------------------------------------------------------------
+            // |        |        |        |        |        |        | # |        |        |        |        |        |     |
+            // |        |  LGUI  |  LALT  | LCTRL  | LSHFT  |        | # |  LEFT  |  DOWN  |   UP   | RIGHT  |        |     |
+            // |        |        |  RALT  |        |        |        | # |  LCLK  |  RCLK  |        |        |        |     |
+            //                            |        |        |        | # |  LCLK  |  RCLK  |        |
 
+            bindings = <
+&trans  &trans    &trans    &trans     &trans     &trans    &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans    &kp RALT  &trans     &trans     &trans    &mkp LCLK       &mkp RCLK       &trans        &trans           &trans  &trans
+                            &trans     &trans     &trans    &mkp LCLK       &mkp RCLK       &trans
+            >;
+        };
         media {
             // -----------------------------------------------------------------------------------------------------
             // |     |      |      |       |       |      | # | BOOTLOAD | EP_OFF | BR_D   | BR_U   | EP_ON  |     |
