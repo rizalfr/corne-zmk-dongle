@@ -140,13 +140,13 @@
             // |        |         |         |         |         |         |   #   |         |         |         |         |         |         |
             // |        |  LGUI   |  LALT   |  LCTRL  |  LSHFT  |         |   #   | MV_LEFT | MV_DOWN |  MV_UP  | MV_RGHT |         |         |
             // |        |         |  RALT   |         |         |         |   #   |         | PG_DN   | PG_UP   |         |         |         |
-            //                              |         |         |         |   #   | L_CLICK | R_CLICK |         |         
+            //                              |         |         |         |   #   | R_CLICK | L_CLICK |  MCLK  |         
 
             bindings = <
-&trans     &trans     &trans     &trans     &trans     &trans         &trans          &trans          &trans        &trans           &trans     &trans
+&trans     &trans     &trans     &trans     &trans     &trans         &trans          &msc SCRL_DOWN        &msc SCRL_UP     &trans           &trans     &trans
 &trans     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans     &trans
 &trans     &trans     &kp RALT   &trans     &trans     &trans         &trans          &kp PG_DN       &kp PG_UP     &trans           &trans     &trans
-                                 &trans     &trans     &trans         &mkp LCLK       &mkp RCLK       &trans
+                                 &trans     &trans     &trans         &mkp RCLK       &mkp LCLK        &kp  MCLK
             >;
         };
 
