@@ -41,6 +41,7 @@ include:
     shield: settings_reset
     artifact-name: nano_reset_settings
 
-  - board: seeeduino_xiao_ble
+  - board: nrfmicro_13
     shield: settings_reset
-    artifact-name: xiao_reset_settings
+    artifact-name: nrfmicro_13_reset_settings
+
